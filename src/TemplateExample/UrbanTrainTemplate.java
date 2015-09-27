@@ -1,7 +1,7 @@
 package TemplateExample;
 
-import StrategyExample.Train.LocomotiveType;
-import StrategyExample.Train.TrainType;
+import StrategyExample.Transport.FuelType;
+import StrategyExample.Transport.TransportType;
 
 /**
  * Created by Mindaugas on 9/27/15.
@@ -19,11 +19,11 @@ public class UrbanTrainTemplate extends Train {
 
     @Override
     public String trainLocomotive() {
-        return LocomotiveType.ELECTRIC.toString();
+        return FuelType.ELECTRIC.toString();
     }
 
     @Override
     public String trainType() {
-        return TrainType.Passenger.toString();
+        return TransportType.Passenger.toString();
     }
 }

@@ -1,22 +1,22 @@
-package StrategyExample.Train;
+package StrategyExample.Transport;
 
 /**
  * Created by Mindaugas on 9/25/15.
  */
-public enum TrainType {
+public enum TransportType {
 
     Passenger("passenger "), Freight("goods "), Mixed("goods and passenger ");
 
     private final String text;
-    private final String train = "train";
+    private final String transport = "transport";
 
-    TrainType(final String text) {
+    TransportType(final String text) {
         this.text = text;
     }
 
     @Override
     public String toString() {
-        return text + train;
+        return text + transport;
     }
 
 }

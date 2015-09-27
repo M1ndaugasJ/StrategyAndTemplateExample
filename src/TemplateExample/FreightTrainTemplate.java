@@ -1,7 +1,7 @@
 package TemplateExample;
 
-import StrategyExample.Train.LocomotiveType;
-import StrategyExample.Train.TrainType;
+import StrategyExample.Transport.FuelType;
+import StrategyExample.Transport.TransportType;
 
 /**
  * Created by Mindaugas on 9/27/15.
@@ -20,12 +20,12 @@ public class FreightTrainTemplate extends Train {
 
     @Override
     public String trainLocomotive() {
-        return LocomotiveType.DIESEL.toString();
+        return FuelType.DIESEL.toString();
     }
 
     @Override
     public String trainType() {
-        return TrainType.Freight.toString();
+        return TransportType.Freight.toString();
     }
 
 }

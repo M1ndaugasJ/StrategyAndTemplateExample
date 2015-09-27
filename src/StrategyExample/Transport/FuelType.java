@@ -1,22 +1,22 @@
-package StrategyExample.Train;
+package StrategyExample.Transport;
 
 /**
  * Created by Mindaugas on 9/26/15.
  */
-public enum LocomotiveType {
+public enum FuelType {
 
     STEAM("steam "), ELECTRIC("electric "), DIESEL("diesel ");
 
     private final String text;
-    private final String locomotive = "locomotive";
+    private final String fuel = "fuel";
 
-    LocomotiveType(final String text) {
+    FuelType(final String text) {
         this.text = text;
     }
 
     @Override
     public String toString() {
-        return text + locomotive;
+        return text + fuel;
     }
 
 }
