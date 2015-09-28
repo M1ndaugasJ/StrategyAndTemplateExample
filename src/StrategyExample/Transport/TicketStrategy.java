@@ -5,6 +5,8 @@ package StrategyExample.Transport;
  */
 public interface TicketStrategy {
 
-
+    Double sellTicket();
+    int getRemainingTickets();
+    void setTicketCount(Double ticketCount);
 
 }

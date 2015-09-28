@@ -1,9 +1,6 @@
 package StrategyExample;
 
-import StrategyExample.Transport.Airplane;
-import StrategyExample.Transport.FreightTransport;
-import StrategyExample.Transport.Train;
-import StrategyExample.Transport.UrbanTransport;
+import StrategyExample.Transport.*;
 
 /**
  * Created by Mindaugas on 9/25/15.
@@ -11,7 +8,7 @@ import StrategyExample.Transport.UrbanTransport;
 public class TransportStation {
 
     public static void main(String args[]) {
-        Train train = new Train(new FreightTransport());
+        Train train = new Train(new FreightTransport(), new EconomyClassTicket());
         System.out.println(train.calculateTrainTravelTime(4000, 100, Cities.Ignalina));
         System.out.println(train.trainDescription());
 

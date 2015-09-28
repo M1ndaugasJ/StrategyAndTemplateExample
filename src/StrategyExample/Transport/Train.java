@@ -8,9 +8,11 @@ import StrategyExample.Cities;
 public class Train {
 
     private TransportOperationStrategy trainOperationStrategy;
+    private TicketStrategy ticketStrategy;
 
-    public Train(TransportOperationStrategy trainOperationStrategy) {
+    public Train(TransportOperationStrategy trainOperationStrategy, TicketStrategy ticketStrategy) {
         this.trainOperationStrategy = trainOperationStrategy;
+        this.ticketStrategy = ticketStrategy;
     }
 
     public String calculateTrainTravelTime(double loadKg, double speedKmH, Cities city){
