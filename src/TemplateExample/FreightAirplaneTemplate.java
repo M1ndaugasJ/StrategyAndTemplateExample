@@ -4,28 +4,26 @@ import GeneralClasses.FuelType;
 import GeneralClasses.TransportType;
 
 /**
- * Created by Mindaugas on 9/27/15.
+ * Created by Mindaugas on 9/28/15.
  */
-public class FreightTrainTemplate extends Train {
-
+public class FreightAirplaneTemplate extends Airplane {
     @Override
     public Double loadFactor() {
-        return 0.00028;
+        return 0.0000006;
     }
 
     @Override
     public Double maxSpeedKmH() {
-        return 150.0;
+        return 700.8;
     }
 
     @Override
-    public String trainLocomotive() {
-        return FuelType.DIESEL.toString();
+    public String transportPoweredBy() {
+        return FuelType.PETROL.toString();
     }
 
     @Override
-    public String trainType() {
+    public String transportType() {
         return TransportType.Freight.toString();
     }
-
 }

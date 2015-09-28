@@ -1,6 +1,6 @@
 package TemplateExample;
 
-import StrategyExample.Cities;
+import GeneralClasses.Cities;
 /**
  * Created by Mindaugas on 9/27/15.
  */

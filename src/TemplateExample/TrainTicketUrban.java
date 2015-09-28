@@ -4,17 +4,28 @@ import GeneralClasses.FuelType;
 import GeneralClasses.TransportType;
 
 /**
- * Created by Mindaugas on 9/27/15.
+ * Created by Mindaugas on 9/28/15.
  */
-public class UrbanTrainTemplate extends Train {
+public class TrainTicketUrban extends TrainWithTicket {
+
+    public TrainTicketUrban(){
+        setTicketCount(300);
+        setTicketPrice(50);
+    }
+
+    @Override
+    public int getRemainingTickets() {
+        return getTicketCount();
+    }
+
     @Override
     public Double loadFactor() {
-        return 0.0001;
+        return 0.00028;
     }
 
     @Override
     public Double maxSpeedKmH() {
-        return 300.0;
+        return 150.0;
     }
 
     @Override

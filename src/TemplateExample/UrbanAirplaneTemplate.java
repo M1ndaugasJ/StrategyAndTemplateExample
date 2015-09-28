@@ -4,12 +4,13 @@ import GeneralClasses.FuelType;
 import GeneralClasses.TransportType;
 
 /**
- * Created by Mindaugas on 9/27/15.
+ * Created by Mindaugas on 9/28/15.
  */
-public class UrbanTrainTemplate extends Train {
+public class UrbanAirplaneTemplate extends Airplane {
+
     @Override
     public Double loadFactor() {
-        return 0.0001;
+        return 0.0006;
     }
 
     @Override
@@ -18,12 +19,13 @@ public class UrbanTrainTemplate extends Train {
     }
 
     @Override
-    public String trainLocomotive() {
-        return FuelType.ELECTRIC.toString();
+    public String transportPoweredBy() {
+        return FuelType.STEAM.toString();
     }
 
     @Override
-    public String trainType() {
+    public String transportType() {
         return TransportType.Passenger.toString();
     }
+
 }

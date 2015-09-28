@@ -1,6 +1,6 @@
-package StrategyExample.Transport;
+package StrategyExample;
 
-import StrategyExample.Cities;
+import GeneralClasses.Cities;
 
 /**
  * Created by Mindaugas on 9/25/15.
@@ -13,6 +13,7 @@ public class Train {
     public Train(TransportOperationStrategy trainOperationStrategy, TicketStrategy ticketStrategy) {
         this.trainOperationStrategy = trainOperationStrategy;
         this.ticketStrategy = ticketStrategy;
+        ticketStrategy.setTicketCount(1000);
     }
 
     public String calculateTrainTravelTime(double loadKg, double speedKmH, Cities city){
@@ -21,6 +22,14 @@ public class Train {
 
     public String trainDescription(){
         return trainOperationStrategy.transportDescription();
+    }
+
+    public String sellTrainTicket(){
+        return ticketStrategy.sellTicket();
+    }
+
+    public int getRemainingTickets(){
+        return ticketStrategy.getRemainingTickets();
     }
 
 }

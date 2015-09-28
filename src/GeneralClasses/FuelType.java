@@ -1,11 +1,11 @@
-package StrategyExample.Transport;
+package GeneralClasses;
 
 /**
  * Created by Mindaugas on 9/26/15.
  */
 public enum FuelType {
 
-    STEAM("steam "), ELECTRIC("electric "), DIESEL("diesel ");
+    STEAM("steam "), ELECTRIC("electric "), DIESEL("diesel "), PETROL("petrol ");
 
     private final String text;
     private final String fuel = "fuel";

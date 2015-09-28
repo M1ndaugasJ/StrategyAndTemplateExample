@@ -1,6 +1,6 @@
-package StrategyExample.Transport;
+package StrategyExample;
 
-import StrategyExample.Cities;
+import GeneralClasses.Cities;
 
 /**
  * Created by Mindaugas on 9/25/15.

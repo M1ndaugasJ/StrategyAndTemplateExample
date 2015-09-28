@@ -4,9 +4,19 @@ import GeneralClasses.FuelType;
 import GeneralClasses.TransportType;
 
 /**
- * Created by Mindaugas on 9/27/15.
+ * Created by Mindaugas on 9/28/15.
  */
-public class FreightTrainTemplate extends Train {
+public class TrainTicketFreight extends TrainWithTicket {
+
+    public TrainTicketFreight(){
+        setTicketCount(100);
+        setTicketPrice(80);
+    }
+
+    @Override
+    public int getRemainingTickets() {
+        return getTicketCount();
+    }
 
     @Override
     public Double loadFactor() {
@@ -27,5 +37,4 @@ public class FreightTrainTemplate extends Train {
     public String trainType() {
         return TransportType.Freight.toString();
     }
-
 }

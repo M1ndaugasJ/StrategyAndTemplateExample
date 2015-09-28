@@ -1,4 +1,4 @@
-package StrategyExample;
+package GeneralClasses;
 
 /**
  * Created by Mindaugas on 9/26/15.

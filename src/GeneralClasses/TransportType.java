@@ -1,4 +1,4 @@
-package StrategyExample.Transport;
+package GeneralClasses;
 
 /**
  * Created by Mindaugas on 9/25/15.
