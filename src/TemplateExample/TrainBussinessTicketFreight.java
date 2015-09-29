@@ -1,0 +1,40 @@
+package TemplateExample;
+
+import GeneralClasses.FuelType;
+import GeneralClasses.TransportType;
+
+/**
+ * Created by Mindaugas on 9/27/15.
+ */
+public class TrainBussinessTicketFreight extends TrainWithTicket {
+
+    public TrainBussinessTicketFreight(){
+        setTicketCount(300);
+        setTicketPrice(50);
+    }
+
+    @Override
+    public Double loadFactor() {
+        return 0.00028;
+    }
+
+    @Override
+    public Double maxSpeedKmH() {
+        return 150.0;
+    }
+
+    @Override
+    public String transportPoweredBy() {
+        return FuelType.DIESEL.toString();
+    }
+
+    @Override
+    public String transportType() {
+        return TransportType.Passenger.toString();
+    }
+
+    @Override
+    public int getRemainingTickets() {
+        return getTicketCount();
+    }
+}

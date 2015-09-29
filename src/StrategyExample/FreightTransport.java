@@ -33,7 +33,7 @@ public class FreightTransport implements TransportOperationStrategy {
 
     @Override
     public String travelDuration(double loadKg, double speedKmH, Cities city) {
-        if(speedKmH > maxSpeedKmH){
+        if(speedKmH > maxSpeedKmH) {
             return String.format(speedExceeds, transportType());
         }
         return String.format(freightTravelDescription, transportType(), loadKg, city, city.distanceValue()/speedKmH + loadKg*loadFactor, speedKmH);

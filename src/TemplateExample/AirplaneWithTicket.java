@@ -1,10 +1,9 @@
 package TemplateExample;
 
 /**
- * Created by Mindaugas on 9/28/15.
+ * Created by Mindaugas on 9/29/15.
  */
-public abstract class TrainWithTicket extends TransportWithTicket{
-
+public abstract class AirplaneWithTicket extends TransportWithTicket {
 //    private int ticketCount;
 //    private double ticketPrice;
 //
@@ -37,5 +36,5 @@ public abstract class TrainWithTicket extends TransportWithTicket{
 //    public void setTicketPrice(double ticketPrice) {
 //        this.ticketPrice = ticketPrice;
 //    }
-
 }
+

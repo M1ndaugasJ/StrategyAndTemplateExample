@@ -4,13 +4,18 @@ import GeneralClasses.FuelType;
 import GeneralClasses.TransportType;
 
 /**
- * Created by Mindaugas on 9/28/15.
+ * Created by Mindaugas on 9/27/15.
  */
-public class UrbanAirplaneTemplate extends Airplane {
+public class AirplaneBussinessTicketPassenger extends AirplaneWithTicket {
+
+    public AirplaneBussinessTicketPassenger(){
+        setTicketCount(300);
+        setTicketPrice(50);
+    }
 
     @Override
     public Double loadFactor() {
-        return 0.0006;
+        return 0.0001;
     }
 
     @Override
@@ -20,7 +25,7 @@ public class UrbanAirplaneTemplate extends Airplane {
 
     @Override
     public String transportPoweredBy() {
-        return FuelType.STEAM.toString();
+        return FuelType.DIESEL.toString();
     }
 
     @Override
@@ -28,4 +33,8 @@ public class UrbanAirplaneTemplate extends Airplane {
         return TransportType.Passenger.toString();
     }
 
+    @Override
+    public int getRemainingTickets() {
+        return getTicketCount();
+    }
 }

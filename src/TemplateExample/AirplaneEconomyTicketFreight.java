@@ -4,13 +4,13 @@ import GeneralClasses.FuelType;
 import GeneralClasses.TransportType;
 
 /**
- * Created by Mindaugas on 9/28/15.
+ * Created by Mindaugas on 9/29/15.
  */
-public class TrainTicketFreight extends TrainWithTicket {
+public class AirplaneEconomyTicketFreight extends AirplaneWithTicket {
 
-    public TrainTicketFreight(){
-        setTicketCount(100);
-        setTicketPrice(80);
+    public AirplaneEconomyTicketFreight(){
+        setTicketCount(300);
+        setTicketPrice(50);
     }
 
     @Override
@@ -20,21 +20,21 @@ public class TrainTicketFreight extends TrainWithTicket {
 
     @Override
     public Double loadFactor() {
-        return 0.00028;
+        return 0.0003;
     }
 
     @Override
     public Double maxSpeedKmH() {
-        return 150.0;
+        return 500.9;
     }
 
     @Override
-    public String trainLocomotive() {
-        return FuelType.DIESEL.toString();
+    public String transportPoweredBy() {
+        return FuelType.ELECTRIC.toString();
     }
 
     @Override
-    public String trainType() {
+    public String transportType() {
         return TransportType.Freight.toString();
     }
 }

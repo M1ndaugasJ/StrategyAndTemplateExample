@@ -6,9 +6,9 @@ import GeneralClasses.TransportType;
 /**
  * Created by Mindaugas on 9/28/15.
  */
-public class TrainTicketUrban extends TrainWithTicket {
+public class TrainEconomyTicketUrban extends TrainWithTicket {
 
-    public TrainTicketUrban(){
+    public TrainEconomyTicketUrban(){
         setTicketCount(300);
         setTicketPrice(50);
     }
@@ -29,12 +29,12 @@ public class TrainTicketUrban extends TrainWithTicket {
     }
 
     @Override
-    public String trainLocomotive() {
+    public String transportPoweredBy() {
         return FuelType.ELECTRIC.toString();
     }
 
     @Override
-    public String trainType() {
+    public String transportType() {
         return TransportType.Passenger.toString();
     }
 }
